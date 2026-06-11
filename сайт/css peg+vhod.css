@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Unbounded:wght@200..900&display=swap');
+
+body {
+    background-image: url("Фон1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+}
+
+body h1,
+p,
+a,
+label {
+    text-align: center;
+    font-family: "Unbounded";
+    text-decoration: none;
+}
+
+h1,
+a {
+    padding-bottom: 1%;
+    color: #922b25;
+}
+
+p {
+    padding-top: -10%;
+    color: #bed7e3;
+}
+
+label {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: #922b25;
+}
+
+.form {
+    position: relative;
+    width: 90%;
+    height: auto;
+    max-width: 400px;
+    min-height: 700px;
+    border-radius: 20px;
+    z-index: 100;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    margin: 30px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.fotoback {
+    position: relative;
+    padding-left: 100px;
+    z-index: 100;
+    top: -700px;
+    margin: 0 auto;
+
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"] {
+    width: 100%;
+    max-width: 300px;
+    height: 50px;
+    border: 2px solid #922b25;
+    border-radius: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin: 10px auto;
+    display: block;
+    padding: 0 15px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus {
+    outline: none;
+    border-color: #bed7e3;
+}
+
+input[type="checkbox"] {
+    accent-color: #922b25;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+input::placeholder {
+    color: #bed7e3;
+    font-family: "Unbounded";
+    text-align: center;
+    font-size: 14px;
+}
+
+button[type="submit"] {
+    position: relative;
+    width: 300px;
+    height: 30px;
+    background-color: #922b25;
+    border-radius: 20px;
+    border: #922b25;
+    left: 30px;
+    font-size: 20px;
+    text-align: center;
+    z-index: 100;
+    color: #bed7e3;
+
+}
+
+
+
+.reg {
+    position: relative;
+    top: 30px;
+    left: 0;
+    margin: 30px auto;
+    display: block;
+    width: 200px;
+    text-align: center;
+}
+
+.checkbox {
+    position: relative;
+    left: 0;
+    width: 100%;
+    max-width: 300px;
+    font-size: 10px;
+    top: 0;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.checkbox label {
+    font-size: 15px;
+}
+
+.coloricons {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 30px;
+    top: -180px;
+    z-index: 100;
+}
+
+/* Адаптивность для 786px */
+@media (max-width: 786px) {
+    .form {
+        width: 95%;
+        max-width: 400px;
+        min-height: 600px;
+        border-radius: 15px;
+        margin: 20px auto;
+    }
+
+
+    button[type="submit"] {
+        position: relative;
+        width: 300px;
+        height: 30px;
+        background-color: #922b25;
+        border-radius: 20px;
+        border: #922b25;
+        left: 30px;
+        font-size: 20px;
+        text-align: center;
+        z-index: 100;
+        color: #bed7e3;
+
+    }
+
+
+
+    .coloricons {
+        top: -150px;
+        gap: 15px;
+        padding-bottom: 20px;
+    }
+
+    input::placeholder {
+
+        font-size: 12px;
+    }
+
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="number"] {
+        max-width: 280px;
+        height: 45x;
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    label {
+        font-size: 10px;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+
+    .fotoback {
+        width: 30px;
+        height: 30px;
+        position: relative;
+
+        z-index: 100;
+        top: -500px;
+    }
+
+    .checkbox label {
+        font-size: 15px;
+    }
+
+    .reg {
+        width: 180px;
+        margin: 20px auto;
+        top: 30px;
+    }
+}
+
+/* Адаптивность для 375px */
+@media (max-width: 375px) {
+
+
+    button[type="submit"] {
+        position: relative;
+        width: 200px;
+        height: 30px;
+        background-color: #922b25;
+        border-radius: 20px;
+        border: #922b25;
+        left: 10px;
+        font-size: 20px;
+        text-align: center;
+        z-index: 100;
+        color: #bed7e3;
+
+    }
+
+
+    body {
+        background-size: auto 100%;
+    }
+
+    .form {
+        width: 70%;
+        max-width: 320px;
+        min-height: 500px;
+        border-radius: 10px;
+        margin: 15px auto;
+        padding: 15px;
+        top: 10%;
+    }
+
+    .coloricons {
+
+        top: -100px;
+        gap: 10px;
+        padding-bottom: 15px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="number"] {
+        max-width: 260px;
+        height: 20px;
+        font-size: 10px;
+    }
+
+    input::placeholder {
+        font-size: 10px;
+    }
+
+    h1 {
+        font-size: 15px;
+        padding-bottom: 2%;
+    }
+
+    label {
+        font-size: 10px;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+
+    p,
+    a {
+        font-size: 10px;
+    }
+
+    .fotoback {
+        width: 20px;
+        height: 20px;
+        position: relative;
+        left: -100px;
+        z-index: 100;
+
+
+    }
+
+    .checkbox {
+        font-size: 10px;
+        max-width: 260px;
+    }
+
+    .checkbox label {
+        font-size: 10px;
+    }
+
+    input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+    }
+
+    .reg {
+        width: 180px;
+        margin: 20px auto;
+        top: 5px;
+    }
+}

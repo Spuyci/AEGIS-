@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="widget_width_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png">
+    <link rel="stylesheet" href="css.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>aegis</title>
+
+    <script type="text/javascript">
+        function togglemenu() {
+            document.getElementById('sitebar').classList.toggle('active');
+        }
+    </script>
+</head>
+
+<body>
+    <div id="sitebar" onclick="togglemenu()">
+        <div class="btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <a href="главная.html" class="main">главная </a>
+            <a href="документы.html" сlass="main">документы</a>
+            <a>редактирование документов</a>
+            <img src="fase.png" alt="akk" usemap="#map" class="fase">
+            <map name="map">
+                <area shape="rect" coords="10,1,200,100" alt="prof" href="профиль.html">
+            </map>
+        </nav>
+    </div>
+    <section>
+        <h1 class="h1doc">Выберите тип документа и начтине редактировать</h1>
+        <div class="dokvdok">
+            <div class="tipedok">
+                <div class="image-container">
+                    <img src="w.png" width="300" alt="Текстовый документ">
+                </div>
+                <p>работа с текстом</p>
+            </div>
+
+            <div class="tipedok">
+                <div class="image-container">
+                    <img src="x.png" width="300" alt="Excel документ">
+                </div>
+                <p>работа с таблицами</p>
+            </div>
+
+            <div class="tipedok">
+                <div class="image-container">
+                    <img src="a.png" width="300" alt="PDF документ">
+                </div>
+                <p>работа с базами данных</p>
+            </div>
+
+            <div class="tipedok">
+                <div class="image-container">
+                    <img src="р.png" width="300" alt="Презентация">
+                </div>
+                <p>для работы с презентациями</p>
+            </div>
+
+            <div class="tipedok">
+                <div class="image-container">
+                    <img src="n.png" width="300" alt="Изображения">
+                </div>
+                <p>работа с заметками</p>
+            </div>
+
+            <div class="tipedok">
+                <div class="image-container">
+                    <img src="v.png" width="300" alt="Видео">
+                </div>
+                <p>для работы с схемами</p>
+            </div>
+
+            <div class="tipedok">
+                <div class="image-container">
+                    <img src="о.png" width="300" alt="Аудио">
+                </div>
+                <p>для работы с почтой</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h4>aegis - сайт для хранения документов</h4>
+        <p class="inf">
+            admin@yandex.ru +8908627383 г.Санкт-Петербург Ул.Программистов
+        </p>
+        <div class="iconsname">
+            <h2>связь с нами</h2>
+            <div class="coloricons">
+                <div id="telega"><i class='bx bxl-telegram bx-lg' style='color:#922b25'></i></div>
+                <div id="vk"><i class='bx bxl-vk bx-lg' style='color:#922b25'></i></div>
+            </div>
+        </div>
+        <p class="nameaegis">aegis</p>
+    </footer>
+</body>
+
+</html>

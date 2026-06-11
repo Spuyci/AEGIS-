@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="widget_width_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="css peg+vhod.css">
+    <title>aegis</title>
+</head>
+
+<body>
+    <div class="form">
+        <h1>aegis</h1>
+        <p>регистрация</p>
+        <form action="главная.html" method="GET">
+            <label>никнейм</label>
+            <input type="text" name="username" required placeholder="придумайте никнейм" maxlength="10">
+
+            <label>имейл</label>
+            <input type="email" name="email" required placeholder="введите вашу почту" maxlength="30" >
+
+            <label>телефон</label>
+            <input type="number" name="telephone" required placeholder="ваш номер телефона" maxlength="20">
+
+            <label>пароль</label>
+            <input type="password" name="password" required placeholder="придумайте пароль"   pattern="[!@#$%^&*()_-+=]+" maxlength="10">
+
+            <p class="checkbox">
+                <input type="checkbox" name="agreement" id="agreement" required>
+                <label for="agreement">подтверждение обработки персональных данных</label>
+            </p>
+
+            <button type="submit">зарегистрироваться</button>
+        </form>
+
+        <p class="reg">уже есть аккаунт? <a href="авторизация и регистранция.html">войти</a></p>
+    </div>
+
+    <img src="arrow_back_ios_30dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" alt="back" class="fotoback" usemap="#map">
+    <map name="map">
+        <area shape="rect" coords="10,1,150,50" alt="prof" href="авторизация и регистранция.html">
+    </map>
+
+    <div class="coloricons">
+        <div id="telega"><i class='bx bxl-telegram bx-lg' style='color:#922b25'></i></div>
+        <div id="google"><i class='bx bxl-google bx-lg' style='color:#922b25'></i></div>
+        <div id="vk"><i class='bx bxl-vk bx-lg' style='color:#922b25'></i></div>
+    </div>
+</body>
+
+</html>

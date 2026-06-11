@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="widget_width_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png">
+  <link rel="stylesheet" href="css.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>aegis</title>
+  <script type="text/javascript">
+    function togglemenu() {
+      document.getElementById('sitebar').classList.toggle('active');
+    }
+  </script>
+</head>
+<body>
+  <div id="sitebar" onclick="togglemenu()">
+    <div class="btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav>
+      <a href="главная.html" class="main">главная </a>
+      <a href="документы.html" сlass="main">документы</a>
+      <a>редактирование документов</a>
+      <img src="fase.png" alt="akk" usemap="#map"  class="fase">
+      <map name="map">
+        <area shape="rect" coords="10,1,200,100" alt="prof" href="профиль.html">
+      </map>
+    </nav>
+  </div>
+  <section>
+    <h1>последнее редактирование</h1>
+<div class="dok">
+  <div class="icon-text-container">
+    <div class="icon-item">
+      <img src="dok1.png" alt="dok1" class="dok1">
+      <p>3 дня назад</p>
+    </div>
+    <div class="icon-item">
+      <img src="dok2.png" alt="dok2" class="dok2">
+      <p>20 часов назад</p>
+    </div>
+    <div class="icon-item">
+      <img src="dok3.png" alt="dok3" class="dok3">
+      <p>10 дней назад</p>
+    </div>
+  </div>
+</div>
+    <div class="slider-container">
+      <h1>создайте новый файл</h1>
+      <div class="slider">
+        <input type="radio" name="slider" id="slider1" checked>
+        <input type="radio" name="slider" id="slider2">
+        <input type="radio" name="slider" id="slider3">
+      
+        <div class="foto">
+          <div class="slide"><img src="w.png" width="200"> </div>
+          <div class="slide"><img src="x.png" width="200"> </div>
+          <div class="slide"><img src="р.png"width="200"> </div>
+          <div class="slide"><img src="n.png" width="200"> </div>
+          <div class="slide"><img src="v.png" width="200"> </div>
+        </div>
+        <div class="controls">
+          <label for="slider1"></label>
+          <label for="slider2"></label>
+          <label for="slider3"></label>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <h4>aegis - сайт для хранения документов</h4>
+    <p class="inf">
+      admin@yandex.ru +8908627383 г.Санкт-Петербург Ул.Программистов
+    </p>
+    <div class="iconsname">
+      <h2>связь с нами</h2>
+      <div class="coloricons">
+        <div id="telega"><i class='bx bxl-telegram bx-lg' style='color:#922b25'></i></div>
+        <div id="vk"><i class='bx bxl-vk bx-lg' style='color:#922b25'></i></div>
+      </div>
+    </div>
+    <p class="nameaegis">aegis</p>
+  </footer>
+</body>
+
+</html>
